@@ -1,0 +1,45 @@
+{
+  "name": "@seiyab/turbo-pancake",
+  "version": "0.0.1",
+  "description": "PlantUML parser for JavaScript / TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "lint": "eslint ./src --ext .ts",
+    "format": "prettier -w \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format, && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seiyab/turbo-pancake.git"
+  },
+  "keywords": [
+    "PlantUML"
+  ],
+  "author": "seiyab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seiyab/turbo-pancake/issues"
+  },
+  "homepage": "https://github.com/seiyab/turbo-pancake#readme",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.12.0",
+    "jest": "^26.5.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  }
+}
