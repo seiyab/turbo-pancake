@@ -1,6 +1,6 @@
 {
   "name": "@seiyab/turbo-pancake",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "PlantUML parser for JavaScript / TypeScript",
   "main": "lib/index.js",
   "scripts": {

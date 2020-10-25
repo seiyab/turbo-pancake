@@ -1,0 +1,12 @@
+@startuml test
+class Class01
+class Class02
+
+class Class03 {
+  String name
+  boolean isActive
+}
+
+Class01 --|> Class02
+Class02 o-- Class03
+@enduml

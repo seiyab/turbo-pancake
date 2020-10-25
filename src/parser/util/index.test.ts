@@ -1,11 +1,11 @@
-import { Streams } from '@masala/parser';
+import { Streams } from "@masala/parser";
 
-import { inlineString } from '.';
+import { inlineString } from ".";
 
-describe('inlineString', () => {
-  it('works', () => {
-    const input = 'foobar\nbaz';
+describe("inlineString", () => {
+  it("works", () => {
+    const input = "foobar\nbaz";
     const { value: result } = inlineString().parse(Streams.ofString(input));
-    expect(result).toBe('foobar');
+    expect(result).toBe("foobar");
   });
 });
